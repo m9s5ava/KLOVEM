@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOVE</title>
+    <style>
+           body {
+            background-image: url('photo_2025-11-04_00-52-03.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: "Poppins", sans-serif;
+            text-align: center;
+            background-color: #fffaf5;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        /* body 
+        {
+            margin: 0;
+            background: url('photo_2025-11-04_03-15-28.jpg') center/cover no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Arial;
+        } */
+
+        .cons {
+            width: 95%;
+            max-width: 1400px;
+            height: 700px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+
+        /* Polaroid style */
+        .polaroid {
+            width: 200px;
+            height: 220px;
+            background: white;
+            border: 18px solid #5a0f12;
+            position: absolute;
+            overflow: hidden;
+            box-shadow: 4px 6px 14px rgba(0, 0, 0, 0.25);
+        }
+
+        .polaroid img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Left */
+        .sec1 {
+            width: 33%;
+            height: 100%;
+            position: relative;
+        }
+
+        .sec1 .p1 {
+            top: 20px;
+            left: 40px;
+            transform: rotate(-12deg);
+        }
+
+        .sec1 .p2 {
+            top: 170px;
+            left: 130px;
+            width: 240px;
+            height: 250px;
+            transform: rotate(5deg);
+        }
+
+        .sec1 .p3 {
+            bottom: 30px;
+            left: 60px;
+            transform: rotate(10deg);
+        }
+
+        /* Middle film strips */
+        .sec2 {
+            width: 18%;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .film {
+            width: 250px;
+            /* أضخن من قبل (80 → 115) */
+            height: 500px;
+            /* أقصر من قبل (720 → 520) */
+            border: 12px solid #5a0f12;
+            padding: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .slot {
+            flex: 1;
+            background: white;
+            overflow: hidden;
+            box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.25);
+             padding: 12px solid #5a0f12;
+            border: 6px solid #5a0f12;
+            /* تخانة أكتر للداخل */
+        }
+
+        .slot img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .film-left {
+            transform: rotate(-3deg);
+        }
+
+        .film-right {
+            transform: rotate(3deg);
+        }
+
+        /* Right */
+        .sec3 {
+            width: 33%;
+            height: 100%;
+            position: relative;
+        }
+
+        .sec3 .p1 {
+            top: 20px;
+            right: 40px;
+            transform: rotate(10deg);
+        }
+
+        .sec3 .p2 {
+            top: 170px;
+            right: 120px;
+            width: 240px;
+            height: 250px;
+            transform: rotate(-6deg);
+        }
+
+        .sec3 .p3 {
+            bottom: 25px;
+            right: 60px;
+            transform: rotate(-12deg);
+        }
+            footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 70%;
+            bottom: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            z-index: 10;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="cons">
+
+        <!-- LEFT 3 -->
+        <div class="sec1">
+            <div class="polaroid p1"><img src="d.jpg"></div>
+            <div class="polaroid p2"><img src="g.jpg"></div>
+            <div class="polaroid p3"><img src="l.jpg"></div>
+        </div>
+
+        <!-- MIDDLE 8 IMAGES (4 + 4) -->
+        <div class="sec2">
+            <div class="film film-left">
+                <div class="slot"><img src="erff.jpg"></div>
+                <div class="slot"><img src="errg.jpg"></div>
+                <div class="slot"><img src="ev.jpg"></div>
+                <div class="slot"><img src="rev.jpg"></div>
+            </div>
+            <div class="film film-right">
+                <div class="slot"><img src="rv.jpg"></div>
+                <div class="slot"><img src="vc.jpg"></div>
+                <div class="slot"><img src="fv.jpg"></div>
+                <div class="slot"><img src="rbr.jpg"></div>
+            </div>
+        </div>
+
+        <!-- RIGHT 3 -->
+        <div class="sec3">
+            <div class="polaroid p1"><img src="z.jpg"></div>
+            <div class="polaroid p2"><img src="w.jpg"></div>
+            <div class="polaroid p3"><img src="q.jpg"></div>
+        </div>
+     <footer> Mostafa Mohammed | Love &copy; 2025</footer>
+    </div>
+
+</body>
+
+</html>
